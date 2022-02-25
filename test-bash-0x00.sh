@@ -3,20 +3,20 @@
 # checking for ether apt or pacman
 
 dp_Check () {
-	if ! command -v pacman &> /dev/null
-	then
-		if ! command -v apt &> /dev/null
-		then
+  if ! command -v pacman &> /dev/null
+  then
+    if ! command -v apt &> /dev/null
+    then
       clear
-			echo  "this distro is not supported"
-			exit
-		else
-			deb_Pack
-		fi
-	else
-		arch_Pack
-	fi
-}
+      echo  "this distro is not supported"
+      exit
+    else
+      deb_Pack
+    fi
+  else
+  arch_Pack
+  fi
+  }
 
 # making package manager ready
 
