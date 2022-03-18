@@ -43,7 +43,7 @@ def uscpu():
 
 #Memory Usage
 def mem():
-    draw.text((105, 20),"RAM Usage: " + str(psutil.virtual_memory()[2]) + "% " + str(round(int(psutil.virtual_memory()[4]) /  1000000)) + "/" + str(round(int(psutil.virtual_memory()[0]) / 1000000)) + " MB", font = font10, fill = 0)
+    draw.text((105, 20),"RAM Usage: " + str(psutil.virtual_memory()[2]) + "% " + str(round(int(psutil.virtual_memory()[3]) /  1000000)) + "/" + str(round(int(psutil.virtual_memory()[0]) / 1000000)) + " MB", font = font10, fill = 0)
 
 #Disc usage
 def disk():
