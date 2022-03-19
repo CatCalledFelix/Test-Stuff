@@ -72,8 +72,8 @@ def clean():
     epd.init(epd.FULL_UPDATE)
     epd.Clear(0xFF)
 
-
-if __name__ == "__main__":
+#Main
+def main():
     clean()
     gimg()
     head()
@@ -85,3 +85,7 @@ if __name__ == "__main__":
         clock()
         pdisplay()
         dleep()
+    
+    
+if __name__ == "__main__":
+    main()
